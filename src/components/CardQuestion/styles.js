@@ -4,11 +4,12 @@ import { TextDefault } from "../../styles/stylesGlobal";
 import Icon from "react-native-vector-icons/FontAwesome";
 
 export const Container = styled.View`
-    width: 90%;
+    width: 96%;
     min-height: 100px;
     padding: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
 
+    align-self: center;
     background-color: ${colors.darkGray};
     border-radius: 10px;
 `;
@@ -58,9 +59,9 @@ export const TextDescription = styled(TextDefault)`
 export const ImageQuestion = styled.Image`
     margin-top: 10px;
     width: 100%;
-    height: 300px;
+    min-height: 300px;
 
-    background-color: ${colors.dark}; 
+    background-color: ${colors.dark};
 `;
 
 export const CardFooter = styled.View`
