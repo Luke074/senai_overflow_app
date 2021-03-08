@@ -46,6 +46,7 @@ function Home() {
     <Container>
       <ToolBar>
         <TextToolBar>SENAI OVERFLOW</TextToolBar>
+        <IconSingOut />
       </ToolBar>
       <FlatList
         data={question}
