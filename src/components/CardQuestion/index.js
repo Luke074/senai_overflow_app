@@ -13,15 +13,16 @@ import {
   ContainerInputAnswer,
   InputAnswer,
   CardFooter,
-  SendIcon
+  SendIcon,
+  ContainerAnswer
 } from "./styles";
 import fotoPerfil from "../../../assets/foto_perfil.png";
 import Colors from "../../styles/colors";
 import { FlatList, TouchableOpacity } from "react-native";
 
-function CardAnswer(answer) {
+function CardAnswer({answer}) {
   return (
-    <containerAnswer>
+    <ContainerAnswer>
       <CardHeader>
         <ImageProfile
           source={
@@ -36,7 +37,7 @@ function CardAnswer(answer) {
       <CardBody>
         <TextDescription>{answer.description}</TextDescription>
       </CardBody>
-    </containerAnswer>
+    </ContainerAnswer>
   );
 }
 
